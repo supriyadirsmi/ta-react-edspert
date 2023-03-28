@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    background-color: #EFF4FA;
+}
+
+.container-banner {
+  padding: 90px 120px 0 120px;
+  background-color: #152a46;
+}
+
+.container-content {
+  padding: 89px 72px;
+}
+
+h1 {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 50px;
+  color: white;
+}
+
+.desc-text {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+}
+
 .logo-text {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 700;
