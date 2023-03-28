@@ -1,6 +1,7 @@
 import React from 'react'
 import arrowDown from '../../assets/img/arrow-down.svg'
 import arrowUp from '../../assets/img/arrow-up.svg'
+import Button from '../Button'
 
 export default function Navbar() {
     return (
@@ -13,7 +14,7 @@ export default function Navbar() {
                     <li><a href='/'>Tentang Edspert</a></li>
                 </ul>
             </div>
-            
+            <Button text='Masuk/Daftar' variant='signup'/>
         </nav>
     )
 }
