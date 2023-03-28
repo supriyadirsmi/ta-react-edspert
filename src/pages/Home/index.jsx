@@ -1,11 +1,11 @@
 import React from 'react'
+import MainBanner from '../../components/MainBanner'
 import Content from '../../containers/Content'
-import Header from '../../containers/Header'
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <MainBanner />
       <Content />
     </>
   )
