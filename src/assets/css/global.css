@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo-text {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29.22px;
+  color: white;
+}
+
+.navigation {
+  height: 105px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 38px 99px 38px 120px;
+  background-color: #152a46;
+  color: white;
+}
+
+.navmenu {
+  margin-left: auto;
+}
+
+.navmenu ul {
+  display: flex;
+}
+
+.navmenu li {
+  list-style-type: none;
+  margin: 0 40px;
+}
+
+.navmenu li a {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20.45px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+}
