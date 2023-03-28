@@ -8,3 +8,6 @@
     padding: 14px 28.5px 14px 28.5px;
     border-radius: 50px;
 }
+.btn-signup:hover {
+    background-color: #CC4E4E;
+}

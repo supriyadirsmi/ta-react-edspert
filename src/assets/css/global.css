@@ -72,3 +72,6 @@ h1 {
   display: flex;
   width: 100%;
 }
+.navmenu li a:hover {
+    color: #FFCD29;
+}
