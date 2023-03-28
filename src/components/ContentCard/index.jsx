@@ -14,8 +14,8 @@ export default function ContentCard() {
                     </div>
                 </div>
             </div>
-            <div className='bg-white rounded-b-[20px] flex gap-x-[17px] px-[28px] py-[16px]'>
-                <div className='flex flex-col'>
+            <div className='bg-white rounded-b-[20px] flex gap-x-[17px] pl-[24px] pr-[14px] py-[16px]'>
+                <div className='flex flex-col w-full'>
                     <p className="font-['Mulish'] text-black font-[800] text-[20px] leading-[25px]">Programming Laravel</p>
                     <p className="font-['Mulish'] text-black font-[800] text-[17px] leading-[25px]">Getting Started with Laravel 9</p>
                     <div className='flex mt-[7px] gap-x-[16px]'>
@@ -28,8 +28,8 @@ export default function ContentCard() {
                             <p className="font-['Mulish'] text-black font-[600] text-[12px] leading-[20px]">William Hartono, Farel Prayoga</p>
                         </div>
                     </div>
-                    <div className='flex justify-end mt-[14px] gap-x-[6px]'>
-                        <p className="font-['Mulish'] text-black font-[500] text-[13px] leading-[20px] opacity-50 line-through align-top">Rp 2060.000</p>
+                    <div className='flex mt-[14px] justify-end gap-x-[6px]'>
+                        <p className="font-['Mulish'] text-black font-[500] text-[13px] leading-[20px] opacity-50 line-through">Rp 2060.000</p>
                         <p className="font-['Mulish'] text-green font-[800] text-[20px] leading-[20px]">Rp 560.000</p>
                     </div>
                 </div>
