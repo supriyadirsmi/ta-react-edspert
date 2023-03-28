@@ -1,7 +1,7 @@
 import React from 'react'
 import personImg from '../../assets/img/person-content-card.svg'
 
-export default function ContentCard() {
+export default function ProductCard() {
     return (
         <div className='flex flex-col drop-shadow-md'>
             <div className='bg-darkBlue rounded-t-[20px] flex gap-x-[17px] pl-[28px] pt-[16px]'>

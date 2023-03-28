@@ -1,10 +1,10 @@
 import React from 'react'
-import BootCampList from '../BootcampList'
+import ProductList from '../ProductList'
 
 export default function Content() {
     return (
         <div className='container-content'>
-            <BootCampList />
+            <ProductList />
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import modelBanner from '../../assets/img/banner-model.png'
 
-export default function MainBanner() {
+export default function HeroBanner() {
     return (
         <div className='container-banner flex h-[calc(100vh-105px)]'>
             <div className='basis-1/2'>
