@@ -15,6 +15,14 @@ body {
   padding: 89px 72px;
 }
 
+.container-footer {
+    padding: 120px 100px;
+    background-color: white;
+    background-image: url('../img/ellipse-footer.svg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+
 h1 {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 600;
@@ -74,4 +82,29 @@ h1 {
 }
 .navmenu li a:hover {
     color: #FFCD29;
+}
+
+.footer-menu ul {
+    margin-right: 70px;
+}
+
+.footer-menu ul {
+    margin-top: 18px;
+}
+
+.footer-menu ul li {
+    margin-bottom: 12px;
+}
+
+.footer-menu ul li a {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #A3A3A3;
+    text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+    color: #939393;
 }
