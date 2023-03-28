@@ -5,10 +5,11 @@ module.exports = {
   ],
   theme: {
     colors: {
-      blueZodiac: '#152A46',
+      darkBlue: '#152A46',
       yellow: '#FFCD29',
       white: '#FFF',
-      black : '#000'
+      black: '#000',
+      green: '#0ACF83'
     },
     extend: {},
   },
