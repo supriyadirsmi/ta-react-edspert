@@ -1,20 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ProductCard from '../../components/ProductCard'
-import Pagination from '../../components/Pagination'
+import { httpService } from '../../utils/service'
 
 export default function ProductList() {
-    // Bootcamp List Data (Temporary for Edspert assignment 1)
-    const bootcampData = []
-    for (let i = 0; i < 12; i++) {
-        bootcampData.push(<ProductCard key={i} />)
+    const [list, setList] = useState([])
+
+    // fetch mockup data from api
+    const fetchCourse = async () => {
+        const response = await httpService.get('/course')
+        setList(response.data)
+        console.log(response.data)
     }
+
+    useEffect(() => {
+        fetchCourse()
+    }, [])
+    
 
     return (
         <>
             <div className='grid grid-cols-4 gap-[29px]'>
-                {bootcampData}
+                {list.map((item, idx) => {
+                    return (
+                        <ProductCard key={idx} title={item.title} />
+                    )
+                })}
             </div>
-            <Pagination />
         </>
     )
 }
