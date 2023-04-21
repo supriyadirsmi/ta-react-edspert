@@ -22,7 +22,7 @@ export default function ProductList() {
             <div className='grid grid-cols-4 gap-[29px]'>
                 {list.map((item, idx) => {
                     return (
-                        <ProductCard key={idx} title={item.title} />
+                        <ProductCard key={idx} courseId={item.id} title={item.title} mentor={item.mentor} discount={item.discountPrice} fixedPrice={item.fixedPrice} batchDate={ item.batchDate} />
                     )
                 })}
             </div>

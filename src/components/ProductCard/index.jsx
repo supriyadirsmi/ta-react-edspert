@@ -1,9 +1,17 @@
 import React from 'react'
 import personImg from '../../assets/img/person-content-card.svg'
+import Moment from 'react-moment'
+import { useNavigate } from 'react-router-dom'
 
 export default function ProductCard(props) {
+
+    const navigate = useNavigate()
+    const goToDetailPage = (id) => {
+        navigate(`/detail/${id}`)
+    }
+
     return (
-        <div className='flex flex-col drop-shadow-md'>
+        <div className='flex flex-col drop-shadow-md cursor-pointer' onClick={() => goToDetailPage(props.courseId)}>
             <div className='bg-darkBlue rounded-t-[20px] flex gap-x-[17px] pl-[28px] pt-[16px]'>
                 <img src={personImg} alt='Tugas Akhir Edspert React Batch 3 Supriyadi' />
                 <div className='flex flex-col gap-y-[9px]'>
@@ -15,21 +23,24 @@ export default function ProductCard(props) {
             </div>
             <div className='bg-white rounded-b-[20px] flex gap-x-[17px] pl-[24px] pr-[14px] py-[16px]'>
                 <div className='flex flex-col w-full'>
-                    <p className="font-['Mulish'] text-black font-[800] text-[20px] leading-[25px]">Programming Laravel</p>
-                    <p className="font-['Mulish'] text-black font-[800] text-[17px] leading-[25px]">Getting Started with Laravel 9</p>
+                    <p className="font-['Mulish'] text-black font-[800] text-[20px]">{ props.title }</p>
                     <div className='flex mt-[7px] gap-x-[16px]'>
                         <div>
                             <p className="font-['Mulish'] text-black font-[600] text-[12px] leading-[20px] opacity-50">Batch</p>
                             <p className="font-['Mulish'] text-black font-[600] text-[12px] leading-[20px] opacity-50">Mentor</p>
                         </div>
                         <div>
-                            <p className="font-['Mulish'] text-black font-[600] text-[12px] leading-[20px]">September 2022</p>
-                            <p className="font-['Mulish'] text-black font-[600] text-[12px] leading-[20px]">William Hartono, Farel Prayoga</p>
+                            <p className="font-['Mulish'] text-black font-[600] text-[12px] leading-[20px]">
+                                <Moment format="MMMM YYYY">
+                                    { props.batchDate }
+                                </Moment>
+                            </p>
+                            <p className="font-['Mulish'] text-black font-[600] text-[12px] leading-[20px]">{ props.mentor }</p>
                         </div>
                     </div>
                     <div className='flex mt-[14px] justify-end gap-x-[6px]'>
-                        <p className="font-['Mulish'] text-black font-[500] text-[13px] leading-[20px] opacity-50 line-through">Rp 2060.000</p>
-                        <p className="font-['Mulish'] text-green font-[800] text-[20px] leading-[20px]">Rp 560.000</p>
+                        <p className="font-['Mulish'] text-black font-[500] text-[13px] leading-[20px] opacity-50 line-through">Rp { props.discount }</p>
+                        <p className="font-['Mulish'] text-green font-[800] text-[20px] leading-[20px]">Rp { props.fixedPrice }</p>
                     </div>
                 </div>
             </div>
